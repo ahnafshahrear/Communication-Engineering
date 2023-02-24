@@ -1,6 +1,6 @@
-clc;
-clear all;
-close all;
+clc; #... Clear command line
+clear all; #... Clear variables
+close all; #... Clear figures
 
 bits = [1,0,1,1,0,1,0,1,1,0,0,1,0];
 
@@ -21,15 +21,16 @@ for i = 1:length(time)
     if bits(index) == 1
         modulation(i) = voltage;
     else
-        modulation(i) = 0;
+        modulation(i) = -voltage;
     endif
     if time(i)*bitrate >= index
         index = index+1;
     endif
 endfor
 
-plot(time, modulation);
-axis([0 endTime -5 voltage+5]);
+plot(time, modulation, "LineWidth", 1);
+axis([0 endTime -voltage-5 voltage+5]);
+grid on;
 
 #... Demodulation
 

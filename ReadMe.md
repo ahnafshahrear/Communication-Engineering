@@ -12,7 +12,7 @@
 - Basic concepts of analog/digital signal, composite signal.
 - Implementation of modulation and demodulation for the following line coding techniques:
 	- Unipolar NRZ
-	- Polar NRZ-L NRZ-I,
+	- Polar NRZ-L & NRZ-I
 	- Polar RZ, Manchester & Differential Manchester
 	- Bipolar AMI
 	- Multi-transition MLT-3
