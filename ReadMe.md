@@ -1,13 +1,14 @@
 # Communication Engineering Lab
-## 3rd Year 2nd Semester 
+### 3rd Year 2nd Semester - Computer Science & Engineering, University of Rajshahi
 
 ## Author
-- [@ahnafshahrear](https://github.com/ahnafshahrear)
+- Ahnaf Shahrear Khan - [@ahnafshahrear](https://github.com/ahnafshahrear)
+- Gmail - ahnafshahrearkhan@gmail.com
 
 ## Language
-- Matlab (Octave)
+- Matlab
 
-# Index
+## Index
 - Basic concepts of analog/digital signal, composite signal.
 - Implementation of modulation and demodulation for the following line coding techniques:
 	- Unipolar NRZ
