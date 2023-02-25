@@ -23,11 +23,7 @@ if bits(index) == 1
 endif
 
 for i = 1:length(time)
-    if bits(index) == 1
-        modulation(i) = voltage*sign;
-    else
-        modulation(i) = voltage*sign;
-    endif
+    modulation(i) = voltage*sign;
     if time(i)*bitrate >= index
         index = index+1;
         if index <= length(bits) && bits(index) == 1
