@@ -18,17 +18,13 @@ time = 0:samplingTime:endTime;
 index = 1;
 
 for i = 1:length(time)
-    if bits(index) == 1 && time(i)*bitrate < index-1/2
+    if bits(index) == 1
         modulation(i) = -voltage;
-    endif
-    if bits(index) == 1 && time(i)*bitrate >= index-1/2
+    else
         modulation(i) = voltage;
     endif
-    if bits(index) == 0 && time(i)*bitrate < index-1/2
-        modulation(i) = voltage;
-    endif
-    if bits(index) == 0 && time(i)*bitrate >= index-1/2
-        modulation(i) = -voltage;
+    if time(i)*bitrate >= index-1/2
+        modulation(i) = -modulation(i);
     endif
     if time(i)*bitrate >= index
         index = index+1;
