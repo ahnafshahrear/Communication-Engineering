@@ -22,7 +22,7 @@ if bits(1) == 0
 endif
 
 for i = 1:length(time)
-    if time(i)*bitrate < index-1/2
+    if time(i)*bitrate < index-bitrate/2
         modulation(i) = sign*voltage;
     else
         modulation(i) = -sign*voltage;
@@ -45,10 +45,10 @@ index = 1;
 last = voltage;
 
 for i = 1:length(modulation)
-    if modulation(i) == last && time(i)*bitrate < index-1/2
+    if modulation(i) == last && time(i)*bitrate < index-bitrate/2
         demodultaion(index) = 1;
     endif
-    if modulation(i) != last && time(i)*bitrate < index-1/2
+    if modulation(i) != last && time(i)*bitrate < index-bitrate/2
         demodultaion(index) = 0;
     endif
     if time(i)*bitrate >= index

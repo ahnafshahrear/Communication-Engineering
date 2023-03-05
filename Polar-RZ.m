@@ -23,7 +23,7 @@ for i = 1:length(time)
     else
         modulation(i) = -voltage;
     endif
-    if time(i)*bitrate >= index-1/2
+    if time(i)*bitrate >= index-bitrate/2
         modulation(i) = 0;
     endif
     if time(i)*bitrate >= index
