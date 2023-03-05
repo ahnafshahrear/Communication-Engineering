@@ -34,7 +34,7 @@ grid on;
 
 #... Demodulation
 
-index = 1
+index = 1;
 
 for i = 1:length(modulation)
     if modulation(i) == voltage
