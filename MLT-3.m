@@ -46,15 +46,17 @@ grid on;
 #... Demodulation
 
 index = 1
+last = voltage;
 
 for i = 1:length(modulation)
-    if modulation(i) == voltage
-        demodultaion(index) = 1;
-    else
+    if modulation(i) == last
         demodultaion(index) = 0;
+    else
+        demodultaion(index) = 1;
     endif
     if time(i)*bitrate >= index
         index = index+1;
+        last = modulation(i);
     endif
 endfor
 
