@@ -29,7 +29,7 @@ for i = 1:length(time)
 endfor
 
 plot(time, modulation, "LineWidth", 1);
-axis([0 end_time -12 12]);
+axis([0 end_time -10 10]);
 grid on;
 
 #... Demodulation

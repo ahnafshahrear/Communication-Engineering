@@ -18,7 +18,7 @@ a = 3; #... Amplitude
 f = 2; #... Frequency
 modulation = a*sin(2*pi*f*time);
 
-in = 1; #... Bitstream in
+in = 1; #... Bitstream index
 
 for i = 1:length(time)
     if bits(in) == 0
@@ -30,7 +30,7 @@ for i = 1:length(time)
 endfor
 
 plot(time, modulation, "LineWidth", 1);
-axis([0 end_time -12 12]);
+axis([0 end_time -10 10]);
 grid on;
 
 #... Demodulation
