@@ -9,7 +9,7 @@
 - **Matlab**
 
 ## Index
-- **Basic concepts of Analog, Digital signal & Composite Signal**
+- **Basic concepts of Analog, Digital signal & Composite Signal ✓**
 - **Implementation of modulation and demodulation for the following line coding techniques** 
 	- **Unipolar NRZ ✓**
 	- **Polar NRZ-L & NRZ-I ✓**
