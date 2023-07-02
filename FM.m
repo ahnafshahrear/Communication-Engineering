@@ -27,7 +27,8 @@ plot(t, modulated_signal);
 title('Modulated Signal');
 
 #... From YouTube: demodulated_signal = (1/pi)*(ac*message_signal);
-#... Demodulation: my formula
+
+#... Demodulation by my formula
 demodulated_signal = (modulated_signal./carrier_signal)-1;
 subplot(4,1,4);
 plot(t, demodulated_signal);
