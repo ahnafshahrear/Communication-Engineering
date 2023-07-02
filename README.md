@@ -1,7 +1,7 @@
 ## Communication Engineering Lab
+- <span style="color:red">**Ahnaf Shahrear Khan**</span>
 - **3rd Year 2nd Semester, Computer Science & Engineering, University of Rajshahi**
-- **GitHub: [@ahnafshahrear](https://github.com/ahnafshahrear) | Gmail: ahnafshahrearkhan@gmail.com**
-- **NB: This codes are compatible with GNU Octave. To run on Matlab remove the comments**
+- ***NB: This codes are compatible with GNU Octave. To run on Matlab, simply remove the comments***
 
 ### Index
 - **Basic concepts of Analog, Digital signal & Composite Signal ✓**
