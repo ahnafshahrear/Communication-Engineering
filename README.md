@@ -1,5 +1,5 @@
 ## Communication Engineering Lab
-- <span style="color:red">**Ahnaf Shahrear Khan**</span>
+- <code style="color:red">**Ahnaf Shahrear Khan**</code>
 - **3rd Year 2nd Semester, Computer Science & Engineering, University of Rajshahi**
 - ***NB: This codes are compatible with GNU Octave. To run on Matlab, simply remove the comments***
 
