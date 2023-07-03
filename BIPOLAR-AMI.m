@@ -5,15 +5,14 @@ close all; #... Clear figures
 bits = [1 0 1 1 0 0 1];
 
 #... Modulation
-
-bitrate = 1; #... Number of bits per second
+bitrate = 1;
 voltage = 5;
 
-samplingRate = 1000;
-samplingTime = 1/samplingRate;
+sampling_rate = 1000;
+sampling_time = 1/sampling_rate;
 
-endTime = length(bits)/bitrate;
-time = 0:samplingTime:endTime;
+end_time = length(bits)/bitrate;
+time = 0:sampling_time:end_time;
 
 index = 1;
 sign = -1;
@@ -32,12 +31,12 @@ for i = 1:length(time)
     endif
 endfor
 
-plot(time, modulation, "LineWidth", 1);
-axis([0 endTime -voltage-5 voltage+5]);
+plot(time, modulation);
+axis([0 end_time -voltage-5 voltage+5]);
+line([0 end_time], [0,0]);
 grid on;
 
 #... Demodulation
-
 index = 1;
 
 for i = 1:length(modulation)
