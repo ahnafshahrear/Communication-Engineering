@@ -13,6 +13,6 @@
 	- **Manchester & Differential Manchester ✓**
 	- **Bipolar AMI ✓**
 	- **Multitransition MLT-3 ✓**
-- **Implementation of B8ZS & HDB3 scrambling techniques ✓**
-- **Implementation of ASK, FSK & PSK Digital-Analog conversion techniques ✓**
-- **Implementation of AM, FM & PM Analog-Analog conversion techniques ✓**
+- **Implementation of encoding & decoding using B8ZS & HDB3 scrambling techniques**
+- **Implementation of modulation & demodulation using ASK, FSK & PSK ✓**
+- **Implementation of modulation & demodulation using AM, FM & PM ✓**
