@@ -2,7 +2,7 @@
 - **[Ahnaf Shahrear Khan](https://github.com/ahnafshahrear)**
 - **Computer Science & Engineering, University of Rajshahi**
 
-- ***This codes are compatible with GNU Octave. To run on Matlab, simply remove the comments***
+## ***This codes are compatible with GNU Octave. To run on Matlab, simply remove the comments***
 
 ### Lab Tasks
 - **Basic concepts of Analog, Digital signal & Composite Signal ✓**
