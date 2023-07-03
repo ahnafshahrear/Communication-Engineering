@@ -26,8 +26,9 @@ title('Modulated Signal');
 
 #... Demodulation
 x = abs(diff(modulated_signal));
+#... To use butter function we need to run the following 2 commands
 #... pkg install -forge signal
-#... pkg load signal
+pkg load signal
 [a,b] = butter(10, 0.03);
 demodulated_signal = filter(a,b,x);
 subplot(4,1,4);
