@@ -1,6 +1,6 @@
-## Communication Engineering Lab
+## Communication Engineering Lab - 3rd Year 2nd Semester
 - **[Ahnaf Shahrear Khan](https://github.com/ahnafshahrear)**
-- **3rd Year 2nd Semester, Computer Science & Engineering, University of Rajshahi**
+- **Computer Science & Engineering, University of Rajshahi**
 
 - ***This codes are compatible with GNU Octave. To run on Matlab, simply remove the comments***
 
