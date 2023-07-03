@@ -36,14 +36,13 @@ line([0 end_time], [0,0]);
 grid on;
 
 #... Demodulation
-
 index = 1;
 
 for i = 1:length(modulation)
-    if modulation(i) == -voltage && time(i)*bitrate < index-bitrate/2
+    if modulation(i) == -voltage && time(i)*bitrate < index-(bitrate/2)
         demodultaion(index) = 1;
     endif
-    if modulation(i) == voltage && time(i)*bitrate < index-bitrate/2
+    if modulation(i) == voltage && time(i)*bitrate < index-(bitrate/2)
         demodultaion(index) = 0;
     endif
     if time(i)*bitrate >= index
