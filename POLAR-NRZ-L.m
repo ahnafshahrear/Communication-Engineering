@@ -33,7 +33,6 @@ line([0 end_time], [0,0]);
 grid on;
 
 #... Demodulation
-
 index = 1;
 
 for i = 1:length(modulation)
