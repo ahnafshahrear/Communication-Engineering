@@ -15,4 +15,4 @@
 - **Implementation of modulation & demodulation using ASK, FSK & PSK ✓**
 - **Implementation of modulation & demodulation using AM, FM & PM ✓**
 
-**𝚃𝚑𝚒𝚜 𝚌𝚘𝚍𝚎𝚜 𝚊𝚛𝚎 𝚌𝚘𝚖𝚙𝚊𝚝𝚒𝚋𝚕𝚎 𝚠𝚒𝚝𝚑 𝙶𝙽𝚄 𝙾𝚌𝚝𝚊𝚟𝚎. 𝚃𝚘 𝚛𝚞𝚗 𝚘𝚗 𝙼𝚊𝚝𝚕𝚊𝚋, 𝚜𝚒𝚖𝚙𝚕𝚢 𝚛𝚎𝚖𝚘𝚟𝚎 𝚝𝚑𝚎 𝚌𝚘𝚖𝚖𝚎𝚗𝚝𝚜**
+### This codes are compatible with GNU Octave. To run on Matlab, simply remove the comments
