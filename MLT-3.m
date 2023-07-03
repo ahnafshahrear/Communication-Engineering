@@ -45,7 +45,6 @@ line([0 end_time], [0,0]);
 grid on;
 
 #... Demodulation
-
 index = 1;
 last = voltage;
 
