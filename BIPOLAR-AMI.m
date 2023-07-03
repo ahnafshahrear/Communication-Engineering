@@ -26,7 +26,7 @@ for i = 1:length(time)
     if time(i)*bitrate >= index
         index = index+1;
         if index <= length(bits) && bits(index) == 1
-            sign = -1*sign;
+            sign = -sign;
         endif
     endif
 endfor
