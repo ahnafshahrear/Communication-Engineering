@@ -3,18 +3,18 @@ clear all; #... Clear variables
 close all; #... Clear figures
 
 #... Analog signal
-f = 5; #... Frequency(Hz)
-a = 12; #... Amplidude
-time = 0:0.01:1; #... Continuous time
-analog_signal = a*sin(2*pi*f*time);
+frequency = 5; #... Frequency(Hz)
+amplitude = 12; #... Amplidude
+time = 0:0.01:2; #... Analog time samples
+analog_signal = amplitude*sin(2*pi*frequency*time);
 subplot(3, 1, 1);
 plot(time, analog_signal);
 title("Analog Signal");
 
 #... Digital signal
-fs = 50; #... Sampling frequency(HZ)
-n = 0:1/fs:1; #... Samples
-digital_signal = a*sin(2*pi*f*n);
+sampling_frequency = 100; #... Sampling frequency(Hz)
+n = 0:1/sampling_frequency:2; #... Samples
+digital_signal = amplitude*sin(2*pi*frequency*n);
 subplot(3, 1, 2);
 stem(n, digital_signal, ".");
 title("Digital Signal");
