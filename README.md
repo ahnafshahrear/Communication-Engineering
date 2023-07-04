@@ -3,7 +3,7 @@
 - **Computer Science & Engineering, University of Rajshahi**
 
 ### Lab Tasks
-- **Basic concepts of Analog, Digital signal & Composite Signal ✓**
+- **Basic implementation of Analog, Digital signal & Composite Signal ✓**
 - **Implementation of the following line coding techniques** 
 	- **Unipolar NRZ ✓**
 	- **Polar NRZ-L & NRZ-I ✓**
