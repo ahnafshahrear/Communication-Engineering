@@ -2,11 +2,11 @@ clc; #... Clear command line
 clear all; #... Clear variables
 close all; #... Clear figures
 
-bits = [1 0 1 1 0 0 1]; #... Bitstream
+bits = [1 0 1 1 0 0 1];
 
 #... Modulation
 
-bitrate = 1; #... Number of bits per second
+bitrate = 1;
 
 sampling_rate = 100;
 sampling_time = 1/sampling_rate;
@@ -14,35 +14,35 @@ sampling_time = 1/sampling_rate;
 end_time = length(bits)/bitrate;
 time = 0:sampling_time:end_time;
 
-signal_one = 3*sin(2*pi*4*time);
-modulation = 3*sin(2*pi*2*time);
+a = 3; #... Amplitude
+signal_one = a*sin(2*pi*4*time);
+modulation = a*sin(2*pi*2*time);
 
-in = 1; #... Bitstream index
+index = 1;
 
 for i = 1:length(time)
-    if bits(in) == 1
+    if bits(index) == 1
         modulation(i) = signal_one(i);
     endif
-    if time(i)*bitrate >= in
-        in = in+1;
+    if time(i)*bitrate >= index
+        index = index+1;
     endif
 endfor
 
-plot(time, modulation, "LineWidth", 1);
-axis([0 end_time -10 10]);
+plot(time, modulation);
+axis([0 end_time -2*a 2*a]);
 grid on;
 
 #... Demodulation
-
-in = 1;
+index = 1;
 
 for i = 1:length(modulation)
-    demodultaion(in) = 1;
+    demodultaion(index) = 1;
     if modulation(i) != signal_one(i)
-        demodultaion(in) = 0;
+        demodultaion(index) = 0;
     endif
-    if time(i)*bitrate >= in
-        in = in+1;
+    if time(i)*bitrate >= index
+        index = index+1;
     endif
 endfor
 
