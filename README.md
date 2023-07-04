@@ -4,7 +4,7 @@
 
 ### Lab Tasks
 - **Basic concepts of Analog, Digital signal & Composite Signal ✓**
-- **Implementation of modulation & demodulation for the following line coding techniques** 
+- **Implementation of the following line coding techniques** 
 	- **Unipolar NRZ ✓**
 	- **Polar NRZ-L & NRZ-I ✓**
 	- **Polar RZ ✓**
