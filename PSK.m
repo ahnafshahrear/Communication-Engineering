@@ -34,7 +34,6 @@ axis([0 end_time -2*a 2*a]);
 grid on;
 
 #... Demodulation
-
 index = 1;
 
 for i = 1:length(modulation)
