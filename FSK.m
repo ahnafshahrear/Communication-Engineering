@@ -5,7 +5,6 @@ close all; #... Clear figures
 bits = [1 0 1 1 0 0 1];
 
 #... Modulation
-
 bitrate = 1;
 
 sampling_rate = 100;
