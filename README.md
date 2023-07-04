@@ -14,5 +14,3 @@
 - **Scrambling techniques: B8ZS & HDB3**
 - **Digital-Analog conversion: Amplitude Shift Keying ✓, Frequency Shift Keying ✓ & Phase Shift Keying ✓**
 - **Analog-Analog conversions: Amplitude Modulation ✓, Frequency Modulation ✓ & Phase Modulation ✓**
-
-### #...These codes are compatible with Octave. To run on MatLab, remove the comments
