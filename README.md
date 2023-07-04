@@ -12,7 +12,7 @@
 	- **Bipolar AMI ✓**
 	- **Multitransition MLT-3 ✓**
 - **Implementation of encoding & decoding using B8ZS & HDB3 scrambling techniques**
-- **Implementation of modulation & demodulation using ASK (Amplitude Shift Keying) ✓, FSK (Frequency Shift Keying) ✓ & PSK (Phase Shift Keying) ✓ Digital-Analog conversion techniques**
-- **Implementation of modulation & demodulation using AM (Amplitude Modulation) ✓, FM (Frequency Modulation) ✓ & PM (Phase Modulation) ✓ Analog-Analog conversion techniques**
+- **Implementation of modulation & demodulation using Amplitude Shift Keying ✓, Frequency Shift Keying ✓ & Phase Shift Keying ✓**
+- **Implementation of modulation & demodulation using Amplitude Modulation ✓, Frequency Modulation ✓ & Phase Modulation ✓**
 
-### This codes are compatible with GNU Octave. To run on Matlab, simply remove the comments
+### This codes are compatible with Octave. To run on MatLab, remove the comments
