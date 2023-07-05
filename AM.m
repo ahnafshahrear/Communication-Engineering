@@ -2,33 +2,29 @@ clc; #... Clear command line
 clear all; #... Clear variables
 close all; #... Clear figures
 
-#... Message signal
-am = 1; #... Amplitude of message signal
-fm = 10; #... Frequency(Hz) of message signal
-t = 0:0.001:1; #... Time
-message_signal = am*sin(2*pi*fm*t);
+msg_amplitude = 1; #... Amplitude of message signal
+msg_frequency = 2; #... Frequency(Hz) of message signal
+time = 0:0.001:3; #... Time samples
+message_signal = msg_amplitude*sin(2*pi*msg_frequency*time); #... Message signal
 subplot(4,1,1);
-plot(t, message_signal);
+plot(time, message_signal);
 title('Message Signal');
 
-#... Carrier signal
-ac = 2; #... Amplitude of carrier signal
-fc = 100; #... Frequency(Hz) of carrier signal
-carrier_signal = ac*sin(2*pi*fc*t);
+carrier_amplitude = 1; #... Amplitude of carrier signal
+carrier_frequency = 30; #... Frequency(Hz) of carrier signal
+carrier_signal = carrier_amplitude*sin(2*pi*carrier_frequency*time); #... Carrier signal
 subplot(4,1,2);
-plot(t, carrier_signal);
+plot(time, carrier_signal);
 title('Carrier Signal');
 
 #... Modulation
-k = am/ac; #... Amplitude sensitivity
-modulated_signal = (1+k*message_signal).*carrier_signal;
+modulated_signal = (carrier_amplitude+message_signal).*sin(2*pi*carrier_frequency*time);
 subplot(4,1,3);
-plot(t, modulated_signal);
+plot(time, modulated_signal);
 title('Modulated Signal');
 
-#... From YouTube: demodulated_signal = (1/pi)*(ac*message_signal);
-#... Demodulation: my formula
-demodulated_signal = (modulated_signal./carrier_signal)-1;
+#... Demodulation
+demodulated_signal = (modulated_signal./carrier_signal)-carrier_amplitude;
 subplot(4,1,4);
-plot(t, demodulated_signal);
+plot(time, demodulated_signal);
 title('Demodulated Signal');
