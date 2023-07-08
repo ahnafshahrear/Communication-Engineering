@@ -56,7 +56,7 @@ for i = 1:length(modulation)
 endfor
 
 for i = 2:length(demodulation)
-  if demodulation(i) == 1 && demodulation(i-1) == -1
+  if demodulation(i-1) == -1 && demodulation(i) == 1
     for j = -1:3
       demodulation(i+j) = 0;
     endfor
