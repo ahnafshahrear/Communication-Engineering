@@ -11,6 +11,6 @@
 	- **Manchester & Differential Manchester ✓**
 	- **Bipolar AMI ✓**
 	- **Multitransition MLT-3 ✓**
-- **Scrambling techniques: ◦ B8ZS ✓ ◦ HDB3 ✓**
-- **Digital-Analog conversion: Amplitude Shift Keying ✓, Frequency Shift Keying ✓ & Phase Shift Keying ✓**
-- **Analog-Analog conversions: Amplitude Modulation ✓, Frequency Modulation ✓ & Phase Modulation ✓**
+- **Scrambling techniques: ○ B8ZS ✓ ○ HDB3 ✓**
+- **Digital-Analog conversion: ○ Amplitude Shift Keying ✓ ○ Frequency Shift Keying ✓ ○ Phase Shift Keying ✓**
+- **Analog-Analog conversions: ○ Amplitude Modulation ✓ ○ Frequency Modulation ✓ ○ Phase Modulation ✓**
