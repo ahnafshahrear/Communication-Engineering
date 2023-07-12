@@ -14,7 +14,9 @@ sampling_time = 1/sampling_rate;
 end_time = length(bits)/bitrate;
 time = 0:sampling_time:end_time;
 
-zero = 0; one = 0;
+count = 0;
+zero = 0;
+one = 0;
 for i = 1:length(bits)
   if bits(i) == 0
     count = count+1;
