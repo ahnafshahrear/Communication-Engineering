@@ -28,7 +28,10 @@ for i = 1:length(bits)
 endfor
 
 index = 1;
-sign = -1;
+sign = 1;
+if bits(1) == 1
+  sign = -1;
+endif
 
 for i = 1:length(time)
   modulation(i) = bits(index)*sign*voltage;
@@ -44,6 +47,7 @@ plot(time, modulation);
 axis([0 end_time -voltage-5 voltage+5]);
 line([0 end_time], [0 0]);
 grid on;
+grid minor;
 
 #... Demodulation
 index = 1;
@@ -55,11 +59,17 @@ for i = 1:length(modulation)
   endif
 endfor
 
-for i = 2:length(demodulation)
-  if demodulation(i-1) == -1 && demodulation(i) == 1
-    for j = -1:3
-      demodulation(i+j) = 0;
-    endfor
+last = 1;
+
+for i = 1:length(demodulation)
+  if demodulation(i) != 0
+    if demodulation(i) == last
+      for j = 0:4
+        demodulation(i+j) = 0;
+      endfor
+    else
+      last = demodulation(i);
+    endif
   endif
 endfor
 
