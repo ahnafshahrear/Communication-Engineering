@@ -24,6 +24,7 @@ plot(time, modulated_signal);
 title('Modulated Signal');
 
 #... Demodulation
+carrier_signal = carrier_signal/carrier_amplitude;
 demodulated_signal = (modulated_signal./carrier_signal)-carrier_amplitude;
 subplot(4,1,4);
 plot(time, demodulated_signal);
