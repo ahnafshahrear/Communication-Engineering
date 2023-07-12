@@ -18,11 +18,7 @@ index = 1;
 sign = -1;
 
 for i = 1:length(time)
-    if bits(index) == 1
-        modulation(i) = sign*voltage;
-    else
-        modulation(i) = 0;
-    endif
+    modulation(i) = bits(index)*sign*voltage;
     if time(i)*bitrate >= index
         index = index+1;
         if index <= length(bits) && bits(index) == 1
