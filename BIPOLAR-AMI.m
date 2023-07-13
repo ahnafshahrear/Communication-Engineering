@@ -18,18 +18,18 @@ index = 1;
 sign = -1;
 
 for i = 1:length(time)
-    modulation(i) = bits(index)*sign*voltage;
-    if time(i)*bitrate >= index
-        index = index+1;
-        if index <= length(bits) && bits(index) == 1
-            sign = -sign;
-        endif
+  modulation(i) = bits(index)*sign*voltage;
+  if time(i)*bitrate >= index
+    if bits(index) == 1
+      sign = -sign;
     endif
+    index = index+1;
+  endif
 endfor
 
 plot(time, modulation);
 axis([0 end_time -voltage-5 voltage+5]);
-line([0 end_time], [0,0]);
+line([0 end_time], [0 0]);
 grid on;
 
 #... Demodulation
