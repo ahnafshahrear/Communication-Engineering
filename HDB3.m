@@ -27,6 +27,8 @@ for i = 1:length(bits)
     bits(i) = -1; zero = 0;
     if rem(one, 2) == 0
       bits(i-3) = 1;
+    else
+      one = one+1;	
     endif
   endif
 endfor
