@@ -18,7 +18,6 @@ plot(t, carrier_signal);
 title('Message Signal');
 
 #... Modulation
-modulation_index = 10;
 modulated_signal = carrier_amplitude*sin(2*pi*carrier_frequency*t+msg_signal);
 subplot(4,1,3);
 plot(t, modulated_signal);
