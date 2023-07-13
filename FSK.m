@@ -36,9 +36,10 @@ grid on;
 index = 1;
 
 for i = 1:length(modulation)
-    demodultaion(index) = 1;
     if modulation(i) != signal_one(i)
         demodultaion(index) = 0;
+    else
+        demodultaion(index) = 1;
     endif
     if time(i)*bitrate >= index
         index = index+1;
