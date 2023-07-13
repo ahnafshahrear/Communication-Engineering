@@ -13,5 +13,5 @@
 	- **Bipolar AMI ✓**
 	- **Multitransition MLT-3 ✓**
 - **Scrambling techniques: ◦ B8ZS ✓ ◦ HDB3 ✓**
-- **Digital-Analog conversion: ◦ Amplitude Shift Keying ✓ ◦ Frequency Shift Keying ✓ ◦ Phase Shift Keying ✓**
+- **Digital-Analog conversion: (1) Amplitude Shift Keying ✓ (2) Frequency Shift Keying ✓ (3) Phase Shift Keying ✓**
 - **Analog-Analog conversions: ◦ Amplitude Modulation ✓ ◦ Frequency Modulation ✓ ◦ Phase Modulation ✓**
