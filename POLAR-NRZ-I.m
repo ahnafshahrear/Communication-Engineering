@@ -17,8 +17,8 @@ time = 0:sampling_time:end_time;
 index = 1;
 #... Assume that last state was positive
 sign = 1; #... Indicates inversion
-if bits(index) == 1
-    sign = -1*sign;
+if bits(1) == 1
+    sign = -sign;
 endif
 
 for i = 1:length(time)
@@ -27,7 +27,7 @@ for i = 1:length(time)
         index = index+1;
         #... Inversion when next bit "1"
         if index <= length(bits) && bits(index) == 1
-            sign = -1*sign;
+            sign = -sign;
         endif
     endif
 endfor
