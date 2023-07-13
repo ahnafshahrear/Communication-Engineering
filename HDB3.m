@@ -2,7 +2,7 @@ clc; #... Clear command line
 clear all; #... Clear variables
 close all; #... Clear figures
 
-bits = [1 1 0 0 0 0 1 0 0 0 0];
+bits = [1 1 0 0 0 0 1 0 0 0 0 1];
 
 #... Modulation
 bitrate = 1;
@@ -14,18 +14,17 @@ sampling_time = 1/sampling_rate;
 end_time = length(bits)/bitrate;
 time = 0:sampling_time:end_time;
 
-count = 0;
 zero = 0;
 one = 0;
 for i = 1:length(bits)
   if bits(i) == 0
-    count = count+1;
+    zero = zero+1;
   else
-    count = 0;
     one = one+1;
+    zero = 0;
   endif
-  if count == 4
-    bits(i) = -1; count = 0;
+  if zero == 4
+    bits(i) = -1; zero = 0;
     if rem(one, 2) == 0
       bits(i-3) = 1;
     endif
