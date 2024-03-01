@@ -1,7 +1,7 @@
 ## Communication Engineering Lab
 - **[Ahnaf Shahrear Khan](https://github.com/ahnafshahrear)**
 - **Computer Science & Engineering, University of Rajshahi**
-- **Code:** `ICE3262`
+- **Code: `ICE-3262`**
 
 ### Lab Tasks
 - **Basic implementation of Analog, Digital signal & Composite Signal ✓**
